@@ -15,6 +15,7 @@ class GoogleSearch(unittest.TestCase):
         elem.send_keys(Keys.RETURN)
         self.driver.implicitly_wait(15)
         new_elem = self.driver.find_elements_by_class_name("r");
+        new_elem2 = self.driver.find_elements_by_class_name("r");
         assert "Wikipedia" in new_elem[0].text
 
 
